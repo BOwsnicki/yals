@@ -1,22 +1,29 @@
 body {
-    background:rgb(12, 1, 41);
+    background:rgb(32, 1, 1);
     color:white;
-    font-family: Helvetica, Arial;
+    font-family: 'Comfortaa', Verdana, Arial, sans-serif;
     font-size: 20px;
+}
+.main {
+  position:relative;
+  top:50px;
 }
 .container {
     margin: 25px;
-    width: 1200px;
-    height: 200px;
-    outline: dashed 1px white;
+    width: 900px;
   }
   .center {
     margin: auto;
-    width: 1200px%;
-    padding: 10px;
+    width: 900px;
   }
-  h1, h2 {
-    /* Center horizontally*/
-    text-align: center;
+  h1, h2, h3, h4 {
+     text-align: center;
   }
+  .centered {
+    position: fixed;
+    bottom:10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 16px;
+}
   
