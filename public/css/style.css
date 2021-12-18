@@ -16,14 +16,28 @@ body {
     margin: auto;
     width: 900px;
   }
-  h1, h2, h3, h4 {
+.greeting {
+  font-size: 24px;
+}
+
+h1, h2, h3, h4 {
      text-align: center;
   }
+
   .centered {
     position: fixed;
     bottom:10px;
     left: 50%;
     transform: translate(-50%, 0);
     font-size: 16px;
+}
+
+/* Anchor settings */
+a:link {
+  color: #7acc7a;
+}
+
+a:visited {
+  color: #67848b;
 }
   
