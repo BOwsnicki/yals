@@ -1,0 +1,22 @@
+body {
+    background:rgb(12, 1, 41);
+    color:white;
+    font-family: Helvetica, Arial;
+    font-size: 20px;
+}
+.container {
+    margin: 25px;
+    width: 1200px;
+    height: 200px;
+    outline: dashed 1px white;
+  }
+  .center {
+    margin: auto;
+    width: 1200px%;
+    padding: 10px;
+  }
+  h1, h2 {
+    /* Center horizontally*/
+    text-align: center;
+  }
+  
