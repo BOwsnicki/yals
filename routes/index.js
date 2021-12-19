@@ -9,6 +9,7 @@ router.get('/', (req, res) => {
 
 router.get('/reset', (req, res) => {
   dba.dbAccess.reset();
+  res.render('index')
 })
 
 module.exports = router
