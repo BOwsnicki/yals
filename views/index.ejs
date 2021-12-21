@@ -1,6 +1,9 @@
-<p class="greeting">Welcome, Horatio!</p>
+<p class="greeting">Welcome<% if (locals.user) { %>, <%= user.name %>!</p><% } %>
 <ul>
+    <li>Login</li>
+    <li>Create Account</li>
     <li>My subscriptions</li>
+    <br>
     <li>All subscriptions</li>
     <br>
     <li><a href="reset">Reset (dev)</a></li>

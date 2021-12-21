@@ -8,8 +8,9 @@ router.get('/', (req, res) => {
 })
 
 router.get('/reset', (req, res) => {
-  dba.dbAccess.reset();
-  res.render('index')
-})
+  dba.dbAccess.reset().then((user) => {
+    console.log("user " + user);
+    res.render('index', { user: user })
+  })})
 
 module.exports = router

@@ -14,12 +14,12 @@ async function reset() {
     horatio = new User({
         name: 'Horatio'
     })
-    console.log(horatio);
     User.collection.drop();
     await horatio.save(function (err) {
         if (err) return handleError(err);
     })
     console.log("RESET finished");
+    return horatio;
 }
 
 module.exports.dbAccess = dbAccess;
