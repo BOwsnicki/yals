@@ -3,7 +3,7 @@ const user = require('../models/user');
 const db = mongoose.connection
 const User = require('../models/user')
 
-const dbAccess = {
+const dbController = {
     reset: reset
 }
 
@@ -22,4 +22,4 @@ async function reset() {
     return horatio;
 }
 
-module.exports.dbAccess = dbAccess;
+module.exports.dbController = dbController;
