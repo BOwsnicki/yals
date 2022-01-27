@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const user = require('../models/user');
 const db = mongoose.connection
 const User = require('../models/user')
 
@@ -9,14 +8,15 @@ const dbController = {
 
 
 // Implementations
-async function reset() {
+function reset() {
     console.log("RESET starting");
     horatio = new User({
         name: 'Horatio'
     })
     User.collection.drop();
-    await horatio.save(function (err) {
+    horatio.save((err,saved) => {
         if (err) return handleError(err);
+        console.log(saved);
     })
     console.log("RESET finished");
     return horatio;
